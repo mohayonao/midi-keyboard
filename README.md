@@ -1,4 +1,7 @@
 # MIDI KEYBOARD
+[![Build Status](http://img.shields.io/travis/mohayonao/midi-keyboard.svg?style=flat-square)](https://travis-ci.org/mohayonao/midi-keyboard)
+[![NPM Version](http://img.shields.io/npm/v/@mohayonao/midi-keyboard.svg?style=flat-square)](https://www.npmjs.org/package/@mohayonao/midi-keyboard)
+[![License](http://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](http://mohayonao.mit-license.org/)
 
 > JavaScript utility for MIDI keyboard
 
