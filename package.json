@@ -1,0 +1,22 @@
+{
+  "name": "@mohayonao/midi-keyboard",
+  "description": "JavaScript utility for MIDI keyboard",
+  "version": "0.0.0",
+  "author": "Nao Yonamine <mohayonao@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/mohayonao/midi-keyboard/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "homepage": "https://github.com/mohayonao/midi-keyboard/",
+  "keywords": [
+    "midi"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mohayonao/midi-keyboard.git"
+  },
+  "scripts": {}
+}
