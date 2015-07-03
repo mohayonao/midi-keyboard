@@ -15,7 +15,7 @@ describe("MIDIKeyboard", () => {
     });
     it("event: 'message'", () => {
       let TestMIDIKeyboard = MIDIKeyboard.extends(TestMIDIDevice);
-      let midiKeyboard = new TestMIDIKeyboard("Keystation Mini 32");
+      let midiKeyboard = new TestMIDIKeyboard("TestDevice1");
       let onmessage = sinon.spy();
 
       midiKeyboard.on("message", onmessage);
@@ -28,7 +28,7 @@ describe("MIDIKeyboard", () => {
         let msg = onmessage.args[0][0];
 
         assert(msg.type === "message");
-        assert(msg.deviceName === "Keystation Mini 32");
+        assert(msg.deviceName === "TestDevice1");
         assert(msg.dataType === "noteOn");
         assert(msg.noteNumber === 64);
         assert(msg.velocity === 100);
