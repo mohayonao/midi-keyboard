@@ -1,7 +1,7 @@
 {
   "name": "@mohayonao/midi-keyboard",
   "description": "JavaScript utility for MIDI keyboard",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "author": "Nao Yonamine <mohayonao@gmail.com>",
   "bugs": {
     "url": "https://github.com/mohayonao/midi-keyboard/issues"
