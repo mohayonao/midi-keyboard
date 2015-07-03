@@ -34,6 +34,10 @@ node examples/dump.js
 ### MIDIKeyboard
 - `constructor(deviceName: string = 'Keystation Mini 32')`
 
+#### Class methods
+
+- `requestDeviceNames(): Promise<{ inputs: string[], outputs: string[] }>`
+
 #### Instance methods
 _Also implements methods from the interface [EventEmitter](https://nodejs.org/api/events.html)._
 
@@ -43,12 +47,20 @@ _Also implements methods from the interface [EventEmitter](https://nodejs.org/ap
 #### Events
 
 - `message`
-  - `dataType: string` "noteOn", "noteOff", "modulation", "volume", "pan", "expression", "sustain" or "pitchbend"
+  - `dataType: string`
+    - noteOn
+    - noteOff
+    - modulation
+    - volume
+    - pan
+    - expression
+    - sustain
+    - pitchbend
   - `deviceName: string`
-  - `value: number` 0 - 127
-  - `channel: number` 8 - 15
-  - `noteNumber: number` 0 - 127 (* noteOn/noteOff)
-  - `velocity: number` 0 - 127 (* noteOn/noteOff)
+  - `channel: number` 0 - 15
+  - `value: number` 0 - 127 ( control change )
+  - `noteNumber: number` 0 - 127 ( noteOn / noteOff )
+  - `velocity: number` 0 - 127 ( noteOn / noteOff )
 
 ## Usage
 
@@ -66,7 +78,7 @@ Browser
 Common
 
 ```js
-var midiKey = new MIDIKeyboard();
+var midiKey = new MIDIKeyboard("Keystation Mini 32");
 
 midiKey.open();
 
@@ -76,7 +88,7 @@ midiKey.on("message", function(e) {
   console.log("velocity  : " + e.velocity);
   console.log("value     : " + e.value);
   console.log("channel   : " + e.channel);
-});
+});  
 ```
 
 ## License
