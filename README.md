@@ -39,7 +39,7 @@ node examples/dump.js
 - `requestDeviceNames(): Promise<{ inputs: string[], outputs: string[] }>`
 
 #### Instance methods
-_Also implements methods from the interface [EventEmitter](https://nodejs.org/api/events.html)._
+_Also implements methods from the interface [@mohayonao/event-emitter](https://github.com/mohayonao/event-emitter)._
 
 - `open(): Promise<[ input, output ]>`
 - `close(): Promise<[ input, output ]>`
